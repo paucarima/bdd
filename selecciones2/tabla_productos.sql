@@ -5,7 +5,7 @@
 --3. Seleccionar el nombre de todos los productos que tenga null el campo de descripción o
 --tengan un stock de 0
 
-	  select * from productos where stock=10 and precio <'10,00 €'
+	  select * from productos where stock=10 and precio <money(10)
 	  
 	  select nombre, stock from productos where nombre like '%m%' or descripcion like '% %' 
 	  

@@ -14,5 +14,6 @@
 	  between 3 and 7 or valoracion=7
 	  
 	  select * from videojuegos 
-	  where nombre like 'C%' and valoracion>7
-	  	or  nombre like 'D%' and valoracion>8
+	  where descripcion like '%juego de guerra%' and
+	  	(nombre like 'C%' and valoracion>7
+	  	or nombre like 'D%' and valoracion>8)

@@ -6,11 +6,11 @@
  
 	  
 	  select numero_cuenta, saldo from cuentas
-	  where saldo>'100€' and saldo<'1000€'
+	  where saldo>money(100) and saldo>money(1000)  
 	  
 	  select * from cuentas
 	  where fecha_creacion 
 	  between '01/01/2023' and '09/03/2024'
 	  
 	  select cedula_propietario,saldo from cuentas
-	  where saldo='0€' or cedula_propietario like '%2'                
+	  where saldo=money(0) or cedula_propietario like '%2'                
